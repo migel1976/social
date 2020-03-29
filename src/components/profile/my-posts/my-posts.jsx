@@ -5,15 +5,15 @@ import Post from './post/post';
 const MyPosts =(props)=>{
     
     return(
-        <div>
-            My posts
+        <div className={classes.postsBlock}>
+            <h3>My posts</h3>
             <div>
                 <textarea></textarea>
             </div>
             <button>add post</button>
             
             <div>
-                <div className={classes.item}>
+                <div className={classes.posts}>
                     <Post message='Hi, how are you' likeCount='4'/>
                     <Post message='It is my first post' likeCount='7'/>
                    
