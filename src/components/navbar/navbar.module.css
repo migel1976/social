@@ -3,10 +3,10 @@
     background-color: burlywood;
   }
 
-.item{
-  color:green;
+.item a{
+  color:rgb(221, 232, 221);
 }
 
-.item.active{
-  color:black;
+.item a.activeLink{
+  color:yellow;
 }
