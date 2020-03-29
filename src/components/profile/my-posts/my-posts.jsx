@@ -3,6 +3,10 @@ import classes from './my-posts.module.css';
 import Post from './post/post';
 
 const MyPosts =(props)=>{
+    let postData=[
+        {id:1, message:'HI, it is my life', likeCount:12},
+        {id:2, message:'Strange is everthing', likeCount:11}
+    ];
     
     return(
         <div className={classes.postsBlock}>
@@ -14,8 +18,8 @@ const MyPosts =(props)=>{
             
             <div>
                 <div className={classes.posts}>
-                    <Post message='Hi, how are you' likeCount='4'/>
-                    <Post message='It is my first post' likeCount='7'/>
+                    <Post message={postData[0].message} likeCount={postData[0].likeCount}/>
+                    <Post message={postData[1].message} likeCount={postData[1].likeCount}/>
                    
                 </div>
             </div>
