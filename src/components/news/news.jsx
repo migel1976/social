@@ -3,7 +3,9 @@ import React from 'react';
 const News=(props)=>{
     return(
         <div>
-            Article News here
+            Article News here:<br/>
+            {props.aloha}
+
         </div>
     )
 };
